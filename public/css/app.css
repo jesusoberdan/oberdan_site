@@ -1,0 +1,169 @@
+:root
+{
+    --mobile: 480px;
+    --tablet-min: 481px;
+    --tablet-max: 767px;
+    --desktop-min:1025px;
+    --desktop-max:1280px;
+    --large: 1281px;  
+
+}
+
+html
+{
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    margin:0;
+    padding:0;
+    font-size: 1rem;   
+}
+
+.blog-title
+{
+    padding:0.25rem;
+    font-size: 2.5rem;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.flex-center
+{
+    justify-content: center;
+
+}
+
+.items-center
+{
+    align-items: center;
+}
+
+.justify-between
+{
+    justify-content: space-between;
+}
+
+.justify-around
+{
+    justify-content: space-around;
+}
+
+.flex-start
+{
+    justify-content: start;
+}
+
+.flex-end
+{
+    justify-content: end;
+}
+
+.flex-row
+{
+    flex-direction: row;
+}
+
+.flex-col
+{
+    flex-direction: column;
+}
+
+.flex-row-reverse
+{
+    flex-direction: row-reverse;
+}
+
+.flex-col-reverse
+{
+    flex-direction:column-reverse;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.text-justify
+{
+    text-align: justify;
+}
+
+.container
+{
+    width: 50%;
+    margin:0 auto;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin:5px;
+    
+}
+
+li {
+list-style:none;
+margin-left: 15px;
+}
+
+a {
+text-decoration: none;
+color:black;
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+/* mobile */
+
+@media (max-width: 480px) 
+{
+
+}
+
+
+/* tablet ipad */
+
+@media (min-width: 481px) and (max-width: 640px) 
+{ 
+ 
+}
+
+/* desktop small */
+
+@media (min-width: 641px) and (max-width: 768px) 
+{  
+   
+}
+/* desktop medium */
+@media (min-width: 769px) and  (max-width: 1024px) 
+{
+   
+}
+
+/* desktop large */
+@media (min-width: 1025px) and  (max-width: 1280px) 
+{ 
+ 
+}
+
+/* large devices */
+
+  @media (min-width: 1536px) 
+ { 
+
+ }
