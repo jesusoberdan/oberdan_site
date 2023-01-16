@@ -9,26 +9,24 @@ $app_path = app_path(__DIR__);
 spl_autoload_register(fn($class)=> include $base_path . "/{$class}.php");
 
 
+use App\Core\App;
 use App\Core\RouteBuilder;
+use App\Core\Database;
 
-include $base_path . "/routes/web.php";
+$app = new App(dirname(__DIR__));
+$app->run();
 
-$method = $_SERVER['REQUEST_METHOD'];
+/*
+$db = new Database("mysql:host=127.0.0.1;dbname=blog;port=3306",'root','');
+
+$posts = $db->query("select * from posts")
+                                   ->all();
+foreach($posts as $post)
+{
+    echo $post['title'] . PHP_EOL;
+}*/
 
 
-$routes = RouteBuilder::routes($method);
-
-// Recibir la solicitud
-$uri = parse_url($_SERVER['REQUEST_URI'],PHP_URL_PATH);
-
-
-if(array_key_exists($uri,$routes)){
-
-  require $base_path . "/app/controllers/$routes[$uri]Controller.php";
-}
-else{
-  echo "PAGE NOT FOUND";
-}
 
 
 // Buscar el uri en las rutas
