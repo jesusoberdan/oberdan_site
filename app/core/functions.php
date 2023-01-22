@@ -13,8 +13,9 @@ function app_path($path)
 
 function dd($value)
 {
+    echo '<pre>';
     die(var_dump($value));
-    
+    echo '</pre>';   
 }
 
 function partial(string $name, string $path): void

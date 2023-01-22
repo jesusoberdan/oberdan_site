@@ -9,6 +9,9 @@ $app_path = app_path(__DIR__);
 spl_autoload_register(fn($class)=> include $base_path . "/{$class}.php");
 
 
+require $base_path . '\bootstrap.php';
+
+
 use App\Core\App;
 use App\Core\RouteBuilder;
 use App\Core\Database;

@@ -1,0 +1,15 @@
+#1- Invocar container desde la App
+#2 - hacer bind de la base de datos.
+#3 - Desplegar valores de la base de datos 
+#5 - Base de datos puede insertar registros
+#4 - Base de datos puede eliminar
+#6 - Base de datos puede modificar registros
+#7 - Modelar el blog
+#8 - Crear controlador de posts
+#9 - Visualizar contenido de un post
+$10 - Crear Panel de Adminisracion
+#11 - Poder filtar blog
+#12 - Crear topicos para el blog
+#13 - crear validator
+#14 - Evitar sql injection, evitar Cross 
+#15 - Buscar la manera de desplegar mi blog. 
