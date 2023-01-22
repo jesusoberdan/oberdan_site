@@ -1,4 +1,5 @@
 #1- Invocar container desde la App
+# crear archivo de configuracion
 #2 - hacer bind de la base de datos.
 #3 - Desplegar valores de la base de datos 
 #5 - Base de datos puede insertar registros
